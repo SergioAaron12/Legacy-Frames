@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="registo.css">
+    <title>Registro - Legacy Frames</title>
+</head>
+<body>
+<!-- Navegación -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="Login.html">
+            <img style="width: 100px;" src="img/logo.png" alt="inicio">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="morduras.html">Morduras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cuadros.html">Cuadros</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Más
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="contacta.html">Contacta</a></li>
+                        <li><a class="dropdown-item" href="Login.html">Empresa</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item active" href="registro.html">Registro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Formulario de Registro -->
+<div class="container">
+    <div class="registro-container">
+        <div class="registro-header">
+            <h2 class="fw-bold">Registro de Usuario</h2>
+            <p class="mb-0">Únete a Legacy Frames y accede a ofertas exclusivas</p>
+        </div>
+
+        <!-- Alerta de éxito -->
+        <div class="alert alert-success" id="alertExito" role="alert">
+            <h4 class="alert-heading">¡Registro exitoso!</h4>
+            <p>Tu cuenta ha sido creada correctamente. Bienvenido a Legacy Frames.</p>
+        </div>
+
+        <!-- Formulario -->
+        <form id="formularioRegistro" novalidate>
+            <div class="row">
+                <!-- Nombre -->
+                <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label">Nombre *</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu nombre.
+                    </div>
+                </div>
+
+                <!-- Apellido -->
+                <div class="col-md-6 mb-3">
+                    <label for="apellido" class="form-label">Apellido *</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" required>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu apellido.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico *</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">
+                    Por favor ingresa un correo electrónico válido.
+                </div>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+56 9 1234 5678">
+                <div class="form-text">Formato: +56 9 1234 5678 (opcional)</div>
+            </div>
+
+            <!-- Dirección -->
+            <div class="mb-3">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Calle, número, comuna">
+            </div>
+
+            <!-- Contraseña -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña *</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+                <div class="password-requirements">
+                    <small class="requirement" id="req-length">• Mínimo 8 caracteres</small>
+                    <small class="requirement" id="req-uppercase">• Al menos una mayúscula</small>
+                    <small class="requirement" id="req-lowercase">• Al menos una minúscula</small>
+                    <small class="requirement" id="req-number">• Al menos un número</small>
+                </div>
+                <div class="invalid-feedback">
+                    La contraseña debe cumplir todos los requisitos.
+                </div>
+            </div>
+
+            <!-- Confirmar Contraseña -->
+            <div class="mb-3">
+                <label for="confirmarPassword" class="form-label">Confirmar Contraseña *</label>
+                <input type="password" class="form-control" id="confirmarPassword" name="confirmarPassword" required>
+                <div class="invalid-feedback">
+                    Las contraseñas no coinciden.
+                </div>
+            </div>
+
+            <!-- Términos y Condiciones -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terminos" name="terminos" required>
+                <label class="form-check-label" for="terminos">
+                    Acepto los <a href="#" class="text-decoration-none" style="color: #8B5C2A;">términos y condiciones</a> y la política de privacidad *
+                </label>
+                <div class="invalid-feedback">
+                    Debes aceptar los términos y condiciones.
+                </div>
+            </div>
+
+            <!-- Newsletter (opcional) -->
+            <div class="mb-4 form-check">
+                <input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" checked>
+                <label class="form-check-label" for="newsletter">
+                    Quiero recibir ofertas y novedades por correo electrónico
+                </label>
+            </div>
+
+            <!-- Botones -->
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-registro">
+                    <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                    Crear Cuenta
+                </button>
+                <a href="inicio.html" class="btn btn-outline-secondary">Cancelar</a>
+            </div>
+        </form>
+
+        <!-- Login Link -->
+        <div class="text-center mt-4">
+            <p class="mb-0">¿Ya tienes una cuenta? <a href="Login.html" class="text-decoration-none" style="color: #8B5C2A;">Inicia sesión aquí</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Profesional -->
+<footer class="footer mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- Información de la Empresa -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="footer-title">Legacy Frames</h5>
+                <p class="footer-text">
+                    Especialistas en marcos y cuadros de calidad. Más de 20 años transformando tus recuerdos en obras de arte.
+                </p>
+                <div class="footer-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Departamental 623, Santiago</span>
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="footer-title">Navegación</h5>
+                <ul class="footer-links">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="cuadros.html">Cuadros</a></li>
+                    <li><a href="morduras.html">Molduras</a></li>
+                    <li><a href="contacta.html">Contacto</a></li>
+                    <li><a href="Login.html">Iniciar Sesión</a></li>
+                </ul>
+            </div>
+
+            <!-- Información de Contacto -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="footer-title">Contacto</h5>
+                <div class="footer-contact">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>227 916 878</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>227 237 949</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@legacyframes.cl</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Lun-Vie: 9:00-18:00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="footer-title">Síguenos</h5>
+                <div class="footer-social">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Línea separadora y copyright -->
+        <hr class="footer-divider">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="footer-copyright">
+                    © 2025 Legacy Frames. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="registro.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="cuadro.css">
+    <title>Legacy Frames - Cuadros</title>
+</head>
+<body>
+<!-- Navegación -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="Login.html">
+            <img style="width: 100px; height: auto;" src="img/logo.png" alt="inicio">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="morduras.html">Molduras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="cuadros.html">Cuadros</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                        Más
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="contacta.html">Contacta</a></li>
+                        <li><a class="dropdown-item" href="Login.html">Empresa</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="registro.html">Registro</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Galería de Cuadros -->
+<div class="container my-5">
+    <div class="cuadros-galeria">
+        <h2 class="text-center mb-4" style="color: #8B5C2A;">Galería de Cuadros y Marcos</h2>
+        
+        <!-- Carousel de Cuadros Destacados -->
+        <div id="carouselCuadros" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Frame Picture.png" class="d-block w-100" alt="Cuadro 1" style="height: 400px; object-fit: cover;">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/fameproxima.png" class="d-block w-100" alt="Cuadro 2" style="height: 400px; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCuadros" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCuadros" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!-- Descripción -->
+        <div class="text-center mb-5">
+            <p class="lead">Explora nuestra colección de cuadros enmarcados y servicios de enmarcación profesional.</p>
+            <p>Ofrecemos enmarcación personalizada para tus obras de arte, fotografías, diplomas y documentos importantes.</p>
+        </div>
+        
+        <!-- Cuadros -->
+        <div class="row g-4">
+            <!-- Cuadro 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card cuadro-card h-100">
+                    <img src="img/Frame Picture.png" class="card-img-top" alt="Marco Clásico" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Marco Clásico Dorado</h5>
+                        <p class="card-text">Marco elegante con acabado dorado, ideal para obras de arte y fotografías especiales.</p>
+                        <p class="precio-destacado">Desde $25.000 CLP</p>
+                        <span class="badge bg-warning">PREMIUM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card cuadro-card h-100">
+                    <img src="img/fameproxima.png" class="card-img-top" alt="Marco Moderno" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Marco Moderno Minimalista</h5>
+                        <p class="card-text">Diseño contemporáneo y limpio, perfecto para espacios modernos y fotografías actuales.</p>
+                        <p class="precio-destacado">Desde $18.000 CLP</p>
+                        <span class="badge bg-info">MODERNO</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card cuadro-card h-100">
+                    <img src="img/mordura1.png" class="card-img-top" alt="Marco Rústico" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Marco Rústico de Madera</h5>
+                        <p class="card-text">Acabado rústico natural, ideal para ambientes campestres y fotografías de naturaleza.</p>
+                        <p class="precio-destacado">Desde $22.000 CLP</p>
+                        <span class="badge bg-success">NATURAL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card cuadro-card h-100">
+                    <img src="img/mordura2.png" class="card-img-top" alt="Marco para Diploma" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Marco para Diplomas</h5>
+                        <p class="card-text">Especializado en enmarcación de diplomas y certificados importantes con protección UV.</p>
+                        <p class="precio-destacado">Desde $15.000 CLP</p>
+                        <span class="badge bg-primary">PROFESIONAL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card cuadro-card h-100">
+                    <img src="img/Frame Picture.png" class="card-img-top" alt="Marco Vintage" style="height: 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Marco Vintage Antiguo</h5>
+                        <p class="card-text">Estilo vintage con detalles ornamentales, perfecto para fotografías familiares clásicas.</p>
+                        <p class="precio-destacado">Desde $28.000 CLP</p>
+                        <span class="badge bg-secondary">VINTAGE</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadro 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card cuadro-card h-100">
+                    <img src="https://i.ebayimg.com/images/g/rkAAAeSwzg1oEIQH/s-l1600.webp 250px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Marco para Camisetas</h5>
+                        <p class="card-text">Especializado en enmarcación de camisetas deportivas y memorabilia con montaje especial.</p>
+                        <p class="precio-destacado">Desde $20.000LP</p>
+                        <span class="badge bg-danger">DEPORTIVO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicios Adicionales -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="text-center mb-4" style="color: #8B5C2A;">Nuestros Servicios</h3>
+                <div class="row g-3">
+                    <div class="col-md-4 text-center">
+                        <div class="card border-0 bg-light h-100">
+                            <div class="card-body">
+                                <h5>🖼️ Enmarcación Personalizada</h5>
+                                <p>Creamos marcos a medida para cualquier tipo de obra o documento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card border-0 bg-light h-100">
+                            <div class="card-body">
+                                <h5>🚚 Despacho a Domicilio</h5>
+                                <p>Entregamos tus cuadros enmarcados directamente en tu hogar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="card border-0 bg-light h-100">
+                            <div class="card-body">
+                                <h5>⚡ Servicio Express</h5>
+                                <p>Enmarcación rápida para casos urgentes en 24-48 horas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <div class="text-center mt-5">
+            <a href="Login.html" class="btn btn-outline-secondary me-2">Volver al Inicio</a>
+            <a href="https://api.whatsapp.com/send?phone=56945621740&text=Hola, me interesa el servicio de enmarcación" class="btn btn-success">Consultar por WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="footer-brand">
+                    <img src="img/logo.png" alt="Legacy Frames" class="footer-logo mb-3">
+                    <h5>Legacy Frames</h5>
+                    <p>Tradición y excelencia en enmarcación desde 1998. Preservamos tus momentos más preciados con la más alta calidad.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-2 col-md-6">
+                <h6 class="footer-title">Navegación</h6>
+                <ul class="footer-links">
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="morduras.html">Molduras</a></li>
+                    <li><a href="cuadros.html">Cuadros</a></li>
+                    <li><a href="Login.html">Nosotros</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3 col-md-6">
+                <h6 class="footer-title">Contacto</h6>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-map-marker-alt"></i> Departamental 623, Santiago</li>
+                    <li><i class="fas fa-phone"></i> 963 691 673</li>
+                    <li><i class="fas fa-phone"></i> 997 658 131</li>
+                    <li><i class="fas fa-clock"></i> Lun-Vie: 9:00-18:00</li>
+                </ul>
+            </div>
+            
+            <div class="col-lg-3">
+                <h6 class="footer-title">Síguenos</h6>
+                <div class="social-links mb-3">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-certifications">
+                    <span class="certification-badge">
+                        <i class="fas fa-certificate"></i> Certificado Cámara de Comercio
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <hr class="footer-divider">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <p class="footer-copyright">&copy; 2025 Legacy Frames. Todos los derechos reservados.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="footer-credits">Diseñado con <i class="fas fa-heart text-danger"></i> para preservar memorias</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
