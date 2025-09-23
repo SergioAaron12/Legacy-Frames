@@ -1,0 +1,248 @@
+.navbar {
+	background-color: #ab9176 !important;
+	border-bottom: 2px solid #5C3A1A !important;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	padding: 0px 20px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-item {
+	color: #ffffff !important;
+}
+.navbar .dropdown-menu {
+	background-color: #8B5C2A !important;
+}
+.navbar .dropdown-item:hover {
+    background-color: #A6784E !important;
+    color: #ffffff !important;
+}
+
+/* Carrusel: todas las imágenes del mismo tamaño */
+#carouselCuadros .carousel-item img {
+	width: 60%;
+	height: 500px;
+	object-fit: contain;
+	background: #4422048d;
+	display: block;
+	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer{
+    margin-top: 40px;
+    padding: 10px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-align: center;
+	color: rgb(0, 0, 0);
+	width: 100%;
+}
+        .cuadro-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .cuadro-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .cuadros-galeria {
+            border: 3px solid #333;
+            border-radius: 15px;
+            padding: 30px;
+            background-color: #f8f9fa;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .precio-destacado {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #8B5C2A;
+        }
+
+/* Variables para footer */
+:root {
+    --primary-color: #8B5C2A;
+    --secondary-color: #A6784E;
+    --accent-color: #D4A574;
+    --dark-color: #5C3A1A;
+    --light-bg: #FAF8F5;
+    --text-dark: #2c3e50;
+    --text-light: #6c757d;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 60px;
+}
+
+.footer-brand h5 {
+    color: var(--accent-color);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    color: #bdc3c7;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.footer-title {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.7rem;
+}
+
+.footer-links a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+    transform: translateX(5px);
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 0.8rem;
+    color: #bdc3c7;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.footer-contact i {
+    color: var(--accent-color);
+    margin-right: 12px;
+    width: 18px;
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.certification-badge {
+    background: rgba(212, 165, 116, 0.2);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    display: inline-block;
+}
+
+.footer-divider {
+    border-color: #34495e;
+    margin: 2.5rem 0 2rem;
+    opacity: 0.5;
+}
+
+.footer-copyright,
+.footer-credits {
+    color: #95a5a6;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-credits .fa-heart {
+    color: #e74c3c !important;
+    animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+/* Responsive para footer */
+@media (max-width: 768px) {
+    .footer-brand {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-title {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-links,
+    .footer-contact {
+        text-align: center;
+    }
+    
+    .footer-contact li {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .footer-brand h5 {
+        font-size: 1.3rem;
+    }
+    
+    .footer-copyright,
+    .footer-credits {
+        text-align: center !important;
+        font-size: 0.85rem;
+    }
+}
