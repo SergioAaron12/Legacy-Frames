@@ -1,6 +1,5 @@
 // Variable global para almacenar los usuarios
 let usuarios = [];
-
 /*Cargar usuarios existentes desde localStorage al cargar la página*/
 function cargarUsuarios() {
     const usuariosGuardados = localStorage.getItem('legacyFramesUsuarios');
@@ -9,18 +8,15 @@ function cargarUsuarios() {
     }
     console.log('Usuarios cargados:', usuarios.length);
 }
-
 /*Guardar usuarios en localStorage*/
 function guardarUsuarios() {
     localStorage.setItem('legacyFramesUsuarios', JSON.stringify(usuarios));
     console.log('Usuarios guardados en localStorage');
 }
-
 /*Validar si el email ya existe*/
 function emailExiste(email) {
     return usuarios.some(usuario => usuario.email.toLowerCase() === email.toLowerCase());
 }
-
 /*Validar contraseña en tiempo real*/
 function validarPassword(password) {
     const requirements = {
@@ -38,7 +34,6 @@ function validarPassword(password) {
 
     return Object.values(requirements).every(req => req === true);
 }
-
 /*Validar que las contraseñas coincidan*/
 function validarConfirmacionPassword() {
     const password = document.getElementById('password').value;
@@ -53,7 +48,6 @@ function validarConfirmacionPassword() {
         return true;
     }
 }
-
 /*Validar email único*/
 function validarEmailUnico() {
     const email = document.getElementById('email').value;
