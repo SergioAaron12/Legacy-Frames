@@ -1,5 +1,4 @@
 .navbar {
-<<<<<<< HEAD
     background-color: var(--primary-color) !important;
     border-bottom: 3px solid var(--dark-color);
     box-shadow: var(--shadow);
@@ -51,24 +50,6 @@
 
 .navbar .dropdown-item:hover {
     background-color: var(--accent-color);
-=======
-	background-color: #ab9176 !important;
-	border-bottom: 2px solid #5C3A1A !important;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	padding: 0px 20px;
-}
-
-.navbar .navbar-brand,
-.navbar .nav-link,
-.navbar .dropdown-item {
-	color: #ffffff !important;
-}
-.navbar .dropdown-menu {
-	background-color: #8B5C2A !important;
-}
-.navbar .dropdown-item:hover {
-    background-color: #A6784E !important;
->>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
     color: #ffffff !important;
 }
 
@@ -115,11 +96,7 @@ footer{
             color: #8B5C2A;
         }
 
-<<<<<<< HEAD
 /* Variables para footer y paleta */
-=======
-/* Variables para footer */
->>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 :root {
     --primary-color: #8B5C2A;
     --secondary-color: #A6784E;
@@ -131,25 +108,17 @@ footer{
     --shadow: 0 4px 15px rgba(0,0,0,0.1);
     --border-radius: 12px;
     --transition: all 0.3s ease;
-<<<<<<< HEAD
     /* Variables de footer alineadas con molduras.css */
     --footer-bg: #2c3e50;
     --footer-text: #ecf0f1;
     --footer-text-muted: #bdc3c7;
     --footer-link-hover: var(--accent-color);
-=======
->>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 }
 
 /* Footer */
 footer.footer {
-<<<<<<< HEAD
     background: linear-gradient(135deg, var(--footer-bg) 0%, #34495e 100%);
     color: var(--footer-text);
-=======
-    background-color: #2c3e50;
-    color: white;
->>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
     margin-top: 60px;
 }
 
@@ -160,11 +129,7 @@ footer.footer {
 }
 
 .footer-brand p {
-<<<<<<< HEAD
     color: var(--footer-text-muted);
-=======
-    color: #bdc3c7;
->>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
     line-height: 1.6;
     margin-bottom: 0;
 }
@@ -195,11 +160,7 @@ footer.footer {
 }
 
 .footer-links a {
-<<<<<<< HEAD
     color: var(--footer-text-muted);
-=======
-    color: #bdc3c7;
->>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
     text-decoration: none;
     transition: var(--transition);
     font-size: 0.95rem;
@@ -218,11 +179,7 @@ footer.footer {
 
 .footer-contact li {
     margin-bottom: 0.8rem;
-<<<<<<< HEAD
     color: var(--footer-text-muted);
-=======
-    color: #bdc3c7;
->>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
     display: flex;
     align-items: center;
     font-size: 0.95rem;
@@ -281,7 +238,6 @@ footer.footer {
     font-size: 0.9rem;
 }
 
-<<<<<<< HEAD
 /* Botones alineados a la paleta */
 .btn-primary {
     --bs-btn-bg: var(--primary-color);
@@ -312,8 +268,6 @@ footer.footer {
     color: #fff !important;
 }
 
-=======
->>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 .footer-credits .fa-heart {
     color: #e74c3c !important;
     animation: heartbeat 2s infinite;
