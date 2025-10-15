@@ -96,7 +96,7 @@ footer{
             color: #8B5C2A;
         }
 
-/* Variables para footer */
+/* Variables para footer y paleta */
 :root {
     --primary-color: #8B5C2A;
     --secondary-color: #A6784E;
@@ -108,12 +108,17 @@ footer{
     --shadow: 0 4px 15px rgba(0,0,0,0.1);
     --border-radius: 12px;
     --transition: all 0.3s ease;
+    /* Variables de footer alineadas con molduras.css */
+    --footer-bg: #2c3e50;
+    --footer-text: #ecf0f1;
+    --footer-text-muted: #bdc3c7;
+    --footer-link-hover: var(--accent-color);
 }
 
 /* Footer */
 footer.footer {
-    background-color: #2c3e50;
-    color: white;
+    background: linear-gradient(135deg, var(--footer-bg) 0%, #34495e 100%);
+    color: var(--footer-text);
     margin-top: 60px;
 }
 
@@ -124,7 +129,7 @@ footer.footer {
 }
 
 .footer-brand p {
-    color: #bdc3c7;
+    color: var(--footer-text-muted);
     line-height: 1.6;
     margin-bottom: 0;
 }
@@ -155,7 +160,7 @@ footer.footer {
 }
 
 .footer-links a {
-    color: #bdc3c7;
+    color: var(--footer-text-muted);
     text-decoration: none;
     transition: var(--transition);
     font-size: 0.95rem;
@@ -174,7 +179,7 @@ footer.footer {
 
 .footer-contact li {
     margin-bottom: 0.8rem;
-    color: #bdc3c7;
+    color: var(--footer-text-muted);
     display: flex;
     align-items: center;
     font-size: 0.95rem;
@@ -231,6 +236,36 @@ footer.footer {
     color: #95a5a6;
     margin: 0;
     font-size: 0.9rem;
+}
+
+/* Botones alineados a la paleta */
+.btn-primary {
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-bg: var(--dark-color);
+    --bs-btn-hover-border-color: var(--dark-color);
+    --bs-btn-active-bg: var(--dark-color);
+    --bs-btn-active-border-color: var(--dark-color);
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-bg: var(--primary-color);
+    --bs-btn-hover-border-color: var(--primary-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: var(--dark-color);
+    --bs-btn-active-border-color: var(--dark-color);
+}
+
+/* Hover específico para el botón "Agregar" en productos (más visible con color de acento) */
+.product-actions { position: relative; z-index: 2; }
+.product-actions .btn { position: relative; z-index: 2; }
+.product-actions .agregar-carrito:hover,
+.product-actions .btn-primary:hover {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #fff !important;
 }
 
 .footer-credits .fa-heart {

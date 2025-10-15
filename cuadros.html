@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="cuadro.css">
+    <link rel="stylesheet" href="carrito.css">
     <title>Legacy Frames - Cuadros</title>
 </head>
 <body>
@@ -38,6 +39,17 @@
                     </ul>
                 </li>
             </ul>
+            <div class="d-flex align-items-center">
+                <!-- Carrito -->
+                <button class="btn btn-outline-dark me-2 position-relative btn-carrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas" aria-controls="carritoOffcanvas">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="contadorCarrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-none">0</span>
+                </button>
+                <span id="navbarAuthArea" class="d-flex align-items-center">
+                    <a class="btn btn-outline-dark me-2" href="registro.html"><i class="fas fa-user-plus me-1"></i>Registro</a>
+                    <a class="btn btn-dark" href="iniciar-sesion.html"><i class="fas fa-sign-in-alt me-1"></i>Ingresar</a>
+                </span>
+            </div>
         </div>
     </div>
 </nav>
@@ -83,6 +95,16 @@
                         <p class="card-text">Marco elegante con acabado dorado, ideal para obras de arte y fotografías especiales.</p>
                         <p class="precio-destacado">Desde $25.000 CLP</p>
                         <span class="badge bg-warning">PREMIUM</span>
+                        <div class="d-flex justify-content-between align-items-center mt-3 product-actions">
+                            <a href="https://api.whatsapp.com/send?phone=56945621740&text=Hola, me interesa el 'Marco Clásico Dorado'" class="btn btn-success btn-sm me-2"><i class="fab fa-whatsapp"></i> Consultar</a>
+                            <button class="btn btn-sm btn-primary agregar-carrito"
+                                data-id="cuadro-1"
+                                data-nombre="Marco Clásico Dorado"
+                                data-precio="25000"
+                                data-imagen="img/marcoDoradoClasico.png">
+                                <i class="fas fa-cart-plus me-1"></i> Agregar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,6 +118,16 @@
                         <p class="card-text">Diseño contemporáneo y limpio, perfecto para espacios modernos y fotografías actuales.</p>
                         <p class="precio-destacado">Desde $18.000 CLP</p>
                         <span class="badge bg-info">MODERNO</span>
+                        <div class="d-flex justify-content-between align-items-center mt-3 product-actions">
+                            <a href="https://api.whatsapp.com/send?phone=56945621740&text=Hola, me interesa el 'Marco Moderno Minimalista'" class="btn btn-success btn-sm me-2"><i class="fab fa-whatsapp"></i> Consultar</a>
+                            <button class="btn btn-sm btn-primary agregar-carrito"
+                                data-id="cuadro-2"
+                                data-nombre="Marco Moderno Minimalista"
+                                data-precio="18000"
+                                data-imagen="img/marco-minimalista-ambiente-moderno_23-2149301885.jpg">
+                                <i class="fas fa-cart-plus me-1"></i> Agregar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -109,6 +141,16 @@
                         <p class="card-text">Acabado rústico natural, ideal para ambientes campestres y fotografías de naturaleza.</p>
                         <p class="precio-destacado">Desde $22.000 CLP</p>
                         <span class="badge bg-success">NATURAL</span>
+                        <div class="d-flex justify-content-between align-items-center mt-3 product-actions">
+                            <a href="https://api.whatsapp.com/send?phone=56945621740&text=Hola, me interesa el 'Marco Rústico de Madera'" class="btn btn-success btn-sm me-2"><i class="fab fa-whatsapp"></i> Consultar</a>
+                            <button class="btn btn-sm btn-primary agregar-carrito"
+                                data-id="cuadro-3"
+                                data-nombre="Marco Rústico de Madera"
+                                data-precio="22000"
+                                data-imagen="img/marcoRustico.png">
+                                <i class="fas fa-cart-plus me-1"></i> Agregar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,6 +164,16 @@
                         <p class="card-text">Especializado en enmarcación de diplomas y certificados importantes con protección UV.</p>
                         <p class="precio-destacado">Desde $15.000 CLP</p>
                         <span class="badge bg-primary">PROFESIONAL</span>
+                        <div class="d-flex justify-content-between align-items-center mt-3 product-actions">
+                            <a href="https://api.whatsapp.com/send?phone=56945621740&text=Hola, me interesa el 'Marco para Diplomas'" class="btn btn-success btn-sm me-2"><i class="fab fa-whatsapp"></i> Consultar</a>
+                            <button class="btn btn-sm btn-primary agregar-carrito"
+                                data-id="cuadro-4"
+                                data-nombre="Marco para Diplomas"
+                                data-precio="15000"
+                                data-imagen="img/marco.diplomaa.png">
+                                <i class="fas fa-cart-plus me-1"></i> Agregar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,6 +187,16 @@
                         <p class="card-text">Estilo vintage con detalles ornamentales, perfecto para fotografías familiares clásicas.</p>
                         <p class="precio-destacado">Desde $28.000 CLP</p>
                         <span class="badge bg-secondary">VINTAGE</span>
+                        <div class="d-flex justify-content-between align-items-center mt-3 product-actions">
+                            <a href="https://api.whatsapp.com/send?phone=56945621740&text=Hola, me interesa el 'Marco Vintage Antiguo'" class="btn btn-success btn-sm me-2"><i class="fab fa-whatsapp"></i> Consultar</a>
+                            <button class="btn btn-sm btn-primary agregar-carrito"
+                                data-id="cuadro-5"
+                                data-nombre="Marco Vintage Antiguo"
+                                data-precio="28000"
+                                data-imagen="img/marcoantigo.png">
+                                <i class="fas fa-cart-plus me-1"></i> Agregar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -148,6 +210,16 @@
                         <p class="card-text">Especializado en enmarcación de camisetas deportivas y memorabilia con montaje especial.</p>
                         <p class="precio-destacado">Desde $20.000LP</p>
                         <span class="badge bg-danger">DEPORTIVO</span>
+                        <div class="d-flex justify-content-between align-items-center mt-3 product-actions">
+                            <a href="https://api.whatsapp.com/send?phone=56945621740&text=Hola, me interesa el 'Marco para Camisetas'" class="btn btn-success btn-sm me-2"><i class="fab fa-whatsapp"></i> Consultar</a>
+                            <button class="btn btn-sm btn-primary agregar-carrito"
+                                data-id="cuadro-6"
+                                data-nombre="Marco para Camisetas"
+                                data-precio="20000"
+                                data-imagen="img/polera.1.png">
+                                <i class="fas fa-cart-plus me-1"></i> Agregar
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,7 +282,7 @@
                 <h6 class="footer-title">Navegación</h6>
                 <ul class="footer-links">
                     <li><a href="inicio.html">Inicio</a></li>
-                    <li><a href="morduras.html">Molduras</a></li>
+                    <li><a href="molduras.html">Molduras</a></li>
                     <li><a href="cuadros.html">Cuadros</a></li>
                     <li><a href="Login.html">Nosotros</a></li>
                 </ul>
@@ -254,6 +326,46 @@
     </div>
 </footer>
 
+<!-- Carrito Offcanvas (igual a molduras.html) -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas" aria-labelledby="carritoOffcanvasLabel">
+        <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="carritoOffcanvasLabel">
+                        <i class="fas fa-shopping-cart me-2"></i>Mi Carrito
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+                <div id="carritoVacio" class="text-center py-5">
+                        <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+                        <h6 class="text-muted">Tu carrito está vacío</h6>
+                        <p class="text-muted small">Agrega productos para comenzar tu compra</p>
+                </div>
+        
+                <div id="carritoContenido" class="d-none">
+                        <div id="itemsCarrito"></div>
+            
+                        <hr>
+            
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                <strong>Total: $<span id="totalCarrito">0</span></strong>
+                                <button id="vaciarCarrito" class="btn btn-outline-danger btn-sm">
+                                        <i class="fas fa-trash me-1"></i>Vaciar
+                                </button>
+                        </div>
+            
+                        <div class="d-grid gap-2">
+                                <button id="procederCompra" class="btn btn-success">
+                                        <i class="fas fa-credit-card me-2"></i>Proceder al Pago
+                                </button>
+                                <button class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">
+                                        Seguir Comprando
+                                </button>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<script src="carrito.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

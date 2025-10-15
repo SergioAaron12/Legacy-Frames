@@ -53,6 +53,40 @@
     color: #ffffff !important;
 }
 
+/* Botones alineados a la paleta del sitio */
+.btn-primary {
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-bg: var(--dark-color);
+    --bs-btn-hover-border-color: var(--dark-color);
+    --bs-btn-active-bg: var(--dark-color);
+    --bs-btn-active-border-color: var(--dark-color);
+}
+
+.btn-outline-success {
+    --bs-btn-color: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-bg: var(--primary-color);
+    --bs-btn-hover-border-color: var(--primary-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: var(--dark-color);
+    --bs-btn-active-border-color: var(--dark-color);
+}
+
+/* Asegurar que los botones de acciones del producto no desaparezcan al hover */
+.product-card { position: relative; }
+.product-actions { position: relative; z-index: 2; }
+.product-actions .btn { position: relative; z-index: 2; }
+/* En caso de superposición de overlays en hover de la tarjeta, mantén los botones visibles */
+.product-card:hover .product-actions { opacity: 1; visibility: visible; }
+/* Hover específico para el botón "Agregar" (más visible con color de acento) */
+.product-actions .agregar-carrito:hover,
+.product-actions .btn-primary:hover {
+    background-color: var(--accent-color) !important;
+    border-color: var(--accent-color) !important;
+    color: #fff !important;
+}
+
 /* Variables CSS para el Footer */
 :root {
     --primary-color: #8B5C2A;

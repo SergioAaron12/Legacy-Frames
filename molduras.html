@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="morduras.css">
+    <link rel="stylesheet" href="molduras.css">
+    <link rel="stylesheet" href="carrito.css">
     <title>Legacy Frames - Molduras para Marcos</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="Login.html">
-            <img style="width: 100px; height: auto;" src="img/logo.png" alt="Legacy Frames">
+            <img style="width: 100px;" src="img/logo.png" alt="inicio">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
@@ -21,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="morduras.html">Molduras</a>
+                    <a class="nav-link active" href="molduras.html">Molduras</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="cuadros.html">Cuadros</a>
@@ -32,12 +33,23 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="contacta.html">Contacta</a></li>
-                        <li><a class="dropdown-item" href="Login.html">Empresa</a></li>
+                        <li><a class="dropdown-item active" href="Login.html">Empresa</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="registro.html">Registro</a></li>
                     </ul>
                 </li>
             </ul>
+            <div class="d-flex align-items-center">
+                <!-- Carrito -->
+                <button class="btn btn-outline-dark me-2 position-relative btn-carrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas" aria-controls="carritoOffcanvas">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span id="contadorCarrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-none">0</span>
+                </button>
+                <span id="navbarAuthArea" class="d-flex align-items-center">
+                    <a class="btn btn-outline-dark me-2" href="registro.html"><i class="fas fa-user-plus me-1"></i>Registro</a>
+                    <a class="btn btn-dark" href="iniciar-sesion.html"><i class="fas fa-sign-in-alt me-1"></i>Ingresar</a>
+                </span>
+            </div>
         </div>
     </div>
 </nav>
@@ -110,10 +122,17 @@
                     <h6 class="product-title">I 09 greca zo</h6>
                     <p class="product-price">$10.000 - $65.000</p>
                     <span class="badge bg-primary">GRECAS</span>
-                    <div class="product-actions mt-2">
-                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura I 09 greca zo" class="btn btn-success btn-sm">
+                    <div class="product-actions mt-2 d-flex justify-content-between align-items-center">
+                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura I 09 greca zo" class="btn btn-success btn-sm me-2">
                             <i class="fab fa-whatsapp"></i> Consultar
                         </a>
+                        <button class="btn btn-primary btn-sm agregar-carrito"
+                                data-id="greca-zo"
+                                data-nombre="I 09 greca zo"
+                                data-precio="37500"
+                                data-imagen="img/mordura1.png">
+                            <i class="fas fa-cart-plus me-1"></i> Agregar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -133,10 +152,17 @@
                     <h6 class="product-title">I 09 greca corazón</h6>
                     <p class="product-price">$10.000 - $70.000</p>
                     <span class="badge bg-primary">GRECAS</span>
-                    <div class="product-actions mt-2">
-                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura I 09 greca corazón" class="btn btn-success btn-sm">
+                    <div class="product-actions mt-2 d-flex justify-content-between align-items-center">
+                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura I 09 greca corazón" class="btn btn-success btn-sm me-2">
                             <i class="fab fa-whatsapp"></i> Consultar
                         </a>
+                        <button class="btn btn-primary btn-sm agregar-carrito"
+                                data-id="greca-corazon"
+                                data-nombre="I 09 greca corazón"
+                                data-precio="40000"
+                                data-imagen="img/mordura2.png">
+                            <i class="fas fa-cart-plus me-1"></i> Agregar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -156,10 +182,17 @@
                     <h6 class="product-title">P 15 greca LA oro</h6>
                     <p class="product-price">$10.000 - $38.000</p>
                     <span class="badge bg-primary">GRECAS</span>
-                    <div class="product-actions mt-2">
-                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura P 15 greca LA oro" class="btn btn-success btn-sm">
+                    <div class="product-actions mt-2 d-flex justify-content-between align-items-center">
+                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura P 15 greca LA oro" class="btn btn-success btn-sm me-2">
                             <i class="fab fa-whatsapp"></i> Consultar
                         </a>
+                        <button class="btn btn-primary btn-sm agregar-carrito"
+                                data-id="greca-oro"
+                                data-nombre="P 15 greca LA oro"
+                                data-precio="24000"
+                                data-imagen="img/moldura3.jpg">
+                            <i class="fas fa-cart-plus me-1"></i> Agregar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -179,10 +212,17 @@
                     <h6 class="product-title">P 15 greca LA plata</h6>
                     <p class="product-price">$10.000 - $105.000</p>
                     <span class="badge bg-primary">GRECAS</span>
-                    <div class="product-actions mt-2">
-                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura P 15 greca LA plata" class="btn btn-success btn-sm">
+                    <div class="product-actions mt-2 d-flex justify-content-between align-items-center">
+                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura P 15 greca LA plata" class="btn btn-success btn-sm me-2">
                             <i class="fab fa-whatsapp"></i> Consultar
                         </a>
+                        <button class="btn btn-primary btn-sm agregar-carrito"
+                                data-id="greca-plata"
+                                data-nombre="P 15 greca LA plata"
+                                data-precio="57500"
+                                data-imagen="img/moldura4.jpg">
+                            <i class="fas fa-cart-plus me-1"></i> Agregar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -203,10 +243,17 @@
                     <h6 class="product-title">H 20 albayalde azul</h6>
                     <p class="product-price">$10.000 - $130.000</p>
                     <span class="badge bg-info">RÚSTICAS</span>
-                    <div class="product-actions mt-2">
-                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura H 20 albayalde azul" class="btn btn-success btn-sm">
+                    <div class="product-actions mt-2 d-flex justify-content-between align-items-center">
+                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura H 20 albayalde azul" class="btn btn-success btn-sm me-2">
                             <i class="fab fa-whatsapp"></i> Consultar
                         </a>
+                        <button class="btn btn-primary btn-sm agregar-carrito"
+                                data-id="rustica-azul"
+                                data-nombre="H 20 albayalde azul"
+                                data-precio="70000"
+                                data-imagen="img/rustica1.jpg">
+                            <i class="fas fa-cart-plus me-1"></i> Agregar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -227,10 +274,17 @@
                     <h6 class="product-title">B-10 t/alerce</h6>
                     <p class="product-price">$10.000 - $65.000</p>
                     <span class="badge bg-success">NATURALES</span>
-                    <div class="product-actions mt-2">
-                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura B-10 t/alerce" class="btn btn-success btn-sm">
+                    <div class="product-actions mt-2 d-flex justify-content-between align-items-center">
+                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura B-10 t/alerce" class="btn btn-success btn-sm me-2">
                             <i class="fab fa-whatsapp"></i> Consultar
                         </a>
+                        <button class="btn btn-primary btn-sm agregar-carrito"
+                                data-id="natural-alerce"
+                                data-nombre="B-10 t/alerce"
+                                data-precio="37500"
+                                data-imagen="img/naturales1.jpg">
+                            <i class="fas fa-cart-plus me-1"></i> Agregar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -251,10 +305,17 @@
                     <h6 class="product-title">J-16</h6>
                     <p class="product-price">$10.000 - $73.000</p>
                     <span class="badge bg-secondary">NATIVAS</span>
-                    <div class="product-actions mt-2">
-                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura J-16" class="btn btn-success btn-sm">
+                    <div class="product-actions mt-2 d-flex justify-content-between align-items-center">
+                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura J-16" class="btn btn-success btn-sm me-2">
                             <i class="fab fa-whatsapp"></i> Consultar
                         </a>
+                        <button class="btn btn-primary btn-sm agregar-carrito"
+                                data-id="nativa-j16"
+                                data-nombre="J-16"
+                                data-precio="41500"
+                                data-imagen="img/nativas1.jpg">
+                            <i class="fas fa-cart-plus me-1"></i> Agregar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -275,10 +336,17 @@
                     <h6 class="product-title">P-12 Finger Joint</h6>
                     <p class="product-price">$8.500 - $47.000</p>
                     <span class="badge bg-warning">FINGER JOINT</span>
-                    <div class="product-actions mt-2">
-                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura P-12 Finger Joint" class="btn btn-success btn-sm">
+                    <div class="product-actions mt-2 d-flex justify-content-between align-items-center">
+                        <a href="https://api.whatsapp.com/send?phone=56227916878&text=Consulta por moldura P-12 Finger Joint" class="btn btn-success btn-sm me-2">
                             <i class="fab fa-whatsapp"></i> Consultar
                         </a>
+                        <button class="btn btn-primary btn-sm agregar-carrito"
+                                data-id="finger-p12"
+                                data-nombre="P-12 Finger Joint"
+                                data-precio="27750"
+                                data-imagen="img/finger_joint1.jpg">
+                            <i class="fas fa-cart-plus me-1"></i> Agregar
+                        </button>
                     </div>
                 </div>
             </div>
@@ -420,6 +488,47 @@
     </div>
 </footer>
 
+<!-- Carrito Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas" aria-labelledby="carritoOffcanvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="carritoOffcanvasLabel">
+            <i class="fas fa-shopping-cart me-2"></i>Mi Carrito
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div id="carritoVacio" class="text-center py-5">
+            <i class="fas fa-shopping-cart fa-3x text-muted mb-3"></i>
+            <h6 class="text-muted">Tu carrito está vacío</h6>
+            <p class="text-muted small">Agrega productos para comenzar tu compra</p>
+        </div>
+        
+        <div id="carritoContenido" class="d-none">
+            <div id="itemsCarrito"></div>
+            
+            <hr>
+            
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <strong>Total: $<span id="totalCarrito">0</span></strong>
+                <button id="vaciarCarrito" class="btn btn-outline-danger btn-sm">
+                    <i class="fas fa-trash me-1"></i>Vaciar
+                </button>
+            </div>
+            
+            <div class="d-grid gap-2">
+                <button id="procederCompra" class="btn btn-success">
+                    <i class="fas fa-credit-card me-2"></i>Proceder al Pago
+                </button>
+                <button class="btn btn-outline-secondary" data-bs-dismiss="offcanvas">
+                    Seguir Comprando
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="carrito.js"></script>
+<script src="sesion.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <script>
