@@ -1,6 +1,17 @@
+<<<<<<< HEAD
 // Variable global para almacenar los usuarios
 let usuarios = [];
 /*Cargar usuarios existentes desde localStorage al cargar la página*/
+=======
+// Sistema de registro simple - Solo localStorage, sin archivos JSON
+
+// Variable global para almacenar los usuarios
+let usuarios = [];
+
+/**
+ * Cargar usuarios existentes desde localStorage al cargar la página
+ */
+>>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 function cargarUsuarios() {
     const usuariosGuardados = localStorage.getItem('legacyFramesUsuarios');
     if (usuariosGuardados) {
@@ -8,16 +19,37 @@ function cargarUsuarios() {
     }
     console.log('Usuarios cargados:', usuarios.length);
 }
+<<<<<<< HEAD
 /*Guardar usuarios en localStorage*/
+=======
+
+/**
+ * Guardar usuarios en localStorage
+ */
+>>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 function guardarUsuarios() {
     localStorage.setItem('legacyFramesUsuarios', JSON.stringify(usuarios));
     console.log('Usuarios guardados en localStorage');
 }
+<<<<<<< HEAD
 /*Validar si el email ya existe*/
 function emailExiste(email) {
     return usuarios.some(usuario => usuario.email.toLowerCase() === email.toLowerCase());
 }
 /*Validar contraseña en tiempo real*/
+=======
+
+/**
+ * Validar si el email ya existe
+ */
+function emailExiste(email) {
+    return usuarios.some(usuario => usuario.email.toLowerCase() === email.toLowerCase());
+}
+
+/**
+ * Validar contraseña en tiempo real
+ */
+>>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 function validarPassword(password) {
     const requirements = {
         length: password.length >= 8,
@@ -34,7 +66,14 @@ function validarPassword(password) {
 
     return Object.values(requirements).every(req => req === true);
 }
+<<<<<<< HEAD
 /*Validar que las contraseñas coincidan*/
+=======
+
+/**
+ * Validar que las contraseñas coincidan
+ */
+>>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 function validarConfirmacionPassword() {
     const password = document.getElementById('password').value;
     const confirmarPassword = document.getElementById('confirmarPassword').value;
@@ -48,7 +87,14 @@ function validarConfirmacionPassword() {
         return true;
     }
 }
+<<<<<<< HEAD
 /*Validar email único*/
+=======
+
+/**
+ * Validar email único
+ */
+>>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 function validarEmailUnico() {
     const email = document.getElementById('email').value;
     const input = document.getElementById('email');
@@ -62,7 +108,13 @@ function validarEmailUnico() {
     }
 }
 
+<<<<<<< HEAD
 /*Registrar nuevo usuario*/
+=======
+/**
+ * Registrar nuevo usuario
+ */
+>>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 function registrarUsuario(datosUsuario) {
     const nuevoUsuario = {
         id: Date.now(), // ID único basado en timestamp
@@ -84,7 +136,13 @@ function registrarUsuario(datosUsuario) {
     return nuevoUsuario;
 }
 
+<<<<<<< HEAD
 /*Mostrar mensaje de éxito*/
+=======
+/**
+ * Mostrar mensaje de éxito
+ */
+>>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 function mostrarExito() {
     document.getElementById('formularioRegistro').style.display = 'none';
     document.getElementById('alertExito').style.display = 'block';
@@ -95,7 +153,13 @@ function mostrarExito() {
     }, 3000);
 }
 
+<<<<<<< HEAD
 /*Mostrar spinner de carga*/
+=======
+/**
+ * Mostrar spinner de carga
+ */
+>>>>>>> 00f51a31421b63c99f483961f43b6c7ce866a138
 function mostrarCargando(mostrar) {
     const boton = document.querySelector('button[type="submit"]');
     const spinner = boton.querySelector('.spinner-border');
